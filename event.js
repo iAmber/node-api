@@ -1,5 +1,8 @@
-var events = require('events')
-var eventEmitter = new events.EventEmitter()
+const EventEmitter = require('events');
+class myEmitter extends EventEmitter{}
+
+const eventEmitter = new myEmitter()
+
 function listener1(){
 	console.log('listener1')
 }
